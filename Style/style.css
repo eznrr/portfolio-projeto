@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.conteudo-esquerda{
+    width: 61vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.titulo{
+    font-size: 6vw;
+    font-weight: 200;
+}
+
+.texto{
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.conteudo-direita{
+    background: rgba(255, 255, 255, 0.3);
+    width: 29vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    border: solid 1px white;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo-direita{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: white;
+}
+
+.icones{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.icones a:hover{
+    transform: rotate(10deg);
+    transition: all 0.1s ease;
+}
+
+a:active{
+    transform: scale(0.9);
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+button{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: white;
+    z-index: -1;
+  }
+  
+  button:hover, button:focus {
+    color: #141d78;
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+@media only screen and (max-width: 1350px){
+    .principal{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .conteudo-esquerda{
+        height: 30vh;
+        width: 70vw;
+        gap: 0;
+    }
+
+    .titulo{
+        font-size: 4.5em;
+    }
+
+    .texto{
+        font-size: 1.5em;
+
+    }
+
+    .conteudo-direita{
+        height: 10vh;
+        width: 70vw;
+        flex-direction: row;
+    }
+
+    .titulo-direita{
+        font-size: 1.5em;
+    }
+
+    .icones{
+        display: flex;
+        flex-direction: row;
+    }
+
+    img{
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .conteudo-direita{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    .conteudo-esquerda{
+        height: 45vh;
+    }
+
+    .titulo{
+        font-size: 4.7em;
+    }
+
+    .texto{
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .conteudo-direita{
+        width: 85vw;
+        gap: 20px;
+    }
+    .conteudo-esquerda{
+        width: 85vw;
+    }
+
+    .titulo{
+        font-size: 2.5em;
+    }
+
+    .texto{
+        font-size: 1.2em;
+    }
+
+    .icones{
+        gap: 50px;
+    }
+
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+    .titulo-direita{
+        font-size: 1.2em;
+    }
+    
+    .texto{
+        font-size: 1em;
+    }
+
+    .icones{
+        gap: 20px;
+    }
+
+}
+

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 13%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    gap: 30%;
+}
+
+.cabecalho-logo{
+    height: 70px;
+    cursor: pointer;
+}
+
+.cabecalho-logo:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.cabecalho-logo:active{
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 55px;
+}
+
+.cabecalho-menu-item:hover{
+    transform: rotate(3deg);
+    text-decoration: underline;
+}
+
+.cabecalho-menu-item:active{
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+.conteudo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.conteudo-titulo{
+    font-size: 3em;
+    justify-content: center;
+    width: 100%;
+}
+
+.conteudo-titulo-cima{
+    width: 100%;
+    font-weight: 300;
+    text-align: left;
+}
+
+.conteudo-titulo-baixo{
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.texto-info-left{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.texto-info-right{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 15px 0;
+    text-align: end;
+}
+
+.icone-info{
+    width: 20%;
+}
+
+.rodape{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 7%;
+}
+
+.rodape-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.rodape-escrita{
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 1350px){
+
+    a{
+        font-size: 1.2em;
+    }
+
+    .cabecalho{
+        gap: 10%;
+    }
+
+    .conteudo-titulo{
+        font-size: 3.6vw;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .conteudo-info{
+        width: 100%;
+    }
+
+    .texto-info{
+        font-size: 1.1em;
+    }
+
+    .icone-info{
+        width: 0;
+    }
+
+    .rodape-logo{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    a{
+        font-size: 0.9em;
+    }
+
+    .cabecalho-logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .cabecalho{
+        gap: 2%;
+    }
+
+    .cabecalho-menu{
+        gap: 20px;
+    }
+
+    .conteudo{
+        height: 70%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .conteudo-titulo{
+        font-size: 4vw;
+    }
+
+    .texto-info{
+        font-size: 0.9em;
+    }
+
+    .rodape-logo{
+        width: 20px;
+        height: 20px;
+    }
+
+    .rodape-escrita{
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+
+    a{
+        font-size: 0.8em;
+    }
+
+    .cabecalho-menu{
+        gap: 10px;
+    }
+
+    .texto-info{
+        font-size: 0.8em;
+    }  
+
+}
+
